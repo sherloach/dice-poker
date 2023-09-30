@@ -1,6 +1,6 @@
 const Playing = () => {
   return (
-    <div>Playing</div>
+    <div className="text-3xl text-orange-600 font-bold underline">Playing</div>
   )
 }
 
