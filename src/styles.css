@@ -111,3 +111,11 @@ button {
     background-color: #0f0f0f69;
   }
 }
+
+.side {
+  @apply absolute bg-[black] w-[200px] h-[200px] leading-[200px] rounded-[10px];
+}
+
+.dot {
+  @apply block w-6 h-6 bg-[gold] m-1 rounded-[50%]
+}

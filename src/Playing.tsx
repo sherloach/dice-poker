@@ -1,6 +1,22 @@
+import { useState } from "react";
+import Dice from "./Dice";
+
 const Playing = () => {
+  const [playerHand, setPlayerHand] = useState();
+  const [diceFace, setDiceFace] = useState<number | undefined>();
+
+  const rollDice = () => {
+    const rng = Math.floor(Math.random() * 6 + 1);
+    console.log(rng);
+    setDiceFace(rng);
+  }
+
   return (
-    <div className="text-3xl text-orange-600 font-bold underline">Playing</div>
+    <div className="">
+      <Dice diceFace={diceFace} />
+      <button onClick={rollDice}>Roll Dice</button>
+      <p>{diceFace}</p>
+    </div>
   )
 }
 
