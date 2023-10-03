@@ -536,6 +536,7 @@ dependencies = [
 name = "dice-poker"
 version = "0.0.0"
 dependencies = [
+ "rand 0.8.5",
  "serde",
  "serde_json",
  "tauri",
